@@ -5,13 +5,13 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class RPSGameGUI extends JFrame {
-    private final RoboterLogik roboterLogik = new RoboterLogik();
+public class SchereSteinPapierGUI extends JFrame {
+    private final SchereSteinPapierRoboterLogik schereSteinPapierRoboterLogik = new SchereSteinPapierRoboterLogik();
     private final JLabel resultLabel = new JLabel("", SwingConstants.CENTER);
     private final JLabel choicesLabel = new JLabel("", SwingConstants.CENTER);
     private static Timer timer;
 
-    public RPSGameGUI() {
+    public SchereSteinPapierGUI() {
         setTitle("Schere Stein Papier");
         setSize(600, 500);
         setMinimumSize(new Dimension(550, 500));
@@ -82,14 +82,14 @@ public class RPSGameGUI extends JFrame {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            String robotChoice = roboterLogik.getRandomChoice();
-            String result = SpielLogik.bestimmeGewinnerString(playerChoice, robotChoice);
+            String robotChoice = schereSteinPapierRoboterLogik.getRandomChoice();
+            String result = SchereSteinPapierLogik.bestimmeGewinnerString(playerChoice, robotChoice);
             resultLabel.setText(result);
             resultLabel.setFont(new Font("Arial", Font.BOLD, 24));
             Color red = new Color(255, 0, 0, 0);
             Color green = new Color(0, 255, 0, 0);
-            resultLabel.setForeground(SpielLogik.istGewinnerSpieler(playerChoice, robotChoice) ? green : red);
-            choicesLabel.setText(SpielLogik.bestimmeErgebnisString(playerChoice, robotChoice));
+            resultLabel.setForeground(SchereSteinPapierLogik.istGewinnerSpieler(playerChoice, robotChoice) ? green : red);
+            choicesLabel.setText(SchereSteinPapierLogik.bestimmeErgebnisString(playerChoice, robotChoice));
             if (timer != null && timer.isRunning()) {
                 timer.stop();
             }
@@ -113,7 +113,7 @@ public class RPSGameGUI extends JFrame {
 
     public static void starte(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            RPSGameGUI gameGUI = new RPSGameGUI();
+            SchereSteinPapierGUI gameGUI = new SchereSteinPapierGUI();
             gameGUI.setVisible(true);
         });
     }

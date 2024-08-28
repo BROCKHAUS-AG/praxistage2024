@@ -1,6 +1,6 @@
 package de.brockhaus;
 
-public class SpielLogik {
+public class SchereSteinPapierLogik {
 
     public static boolean istGewinnerSpieler(String playerChoice, String robotChoice) {
         // Hier muss bestimmt werden, ob der Spieler das Spiel gewonnen hat.

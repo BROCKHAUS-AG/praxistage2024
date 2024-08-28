@@ -2,7 +2,7 @@ package de.brockhaus;
 
 import java.util.Random;
 
-public class RoboterLogik {
+public class SchereSteinPapierRoboterLogik {
 
     enum Choice {
         STEIN, PAPIER, SCHERE
