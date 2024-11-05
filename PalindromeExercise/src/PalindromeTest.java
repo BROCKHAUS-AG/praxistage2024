@@ -4,7 +4,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class PalindromeTest {
-    Palindrome palindrome;
+    Palindrome palindrome = new Main();
 
     @Test
     public void isPalindromReturnsTrue() {
