@@ -1,7 +1,11 @@
-import org.junit.Test;
+package de.brockhausag;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import de.brockhaus.Main;
+import de.brockhaus.Palindrome;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PalindromeTest {
     Palindrome palindrome = new Main();

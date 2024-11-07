@@ -13,7 +13,7 @@ public class OddOrEvenTest {
     @Test
     public void testEvenNumber() {
         int input = 4;
-        String expected = "Die Zahl 4 ist grade.";
+        String expected = "Die Zahl 4 ist gerade.";
         String actual = oddOrEven.oddOrEven(input);
         assertEquals(expected, actual);
     }
@@ -21,7 +21,7 @@ public class OddOrEvenTest {
     @Test
     public void testOddNumber() {
         int input = 7;
-        String expected = "Die Zahl 7 ist ungrade.";
+        String expected = "Die Zahl 7 ist ungerade.";
         String actual = oddOrEven.oddOrEven(input);
         assertEquals(expected, actual);
     }
@@ -29,7 +29,7 @@ public class OddOrEvenTest {
     @Test
     public void testZero() {
         int input = 0;
-        String expected = "Die Zahl 0 ist grade.";
+        String expected = "Die Zahl 0 ist gerade.";
         String actual = oddOrEven.oddOrEven(input);
         assertEquals(expected, actual);
     }
@@ -37,7 +37,7 @@ public class OddOrEvenTest {
     @Test
     public void testNegativeEvenNumber() {
         int input = -6;
-        String expected = "Die Zahl -6 ist grade.";
+        String expected = "Die Zahl -6 ist gerade.";
         String actual = oddOrEven.oddOrEven(input);
         assertEquals(expected, actual);
     }
@@ -45,7 +45,7 @@ public class OddOrEvenTest {
     @Test
     public void testNegativeOddNumber() {
         int input = -9;
-        String expected = "Die Zahl -9 ist ungrade.";
+        String expected = "Die Zahl -9 ist ungerade.";
         String actual = oddOrEven.oddOrEven(input);
         assertEquals(expected, actual);
     }

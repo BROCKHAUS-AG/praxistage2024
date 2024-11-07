@@ -3,7 +3,7 @@ package de.brockhaus;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SiebDesEratosthenes {
+public class SiebDesEratosthenes implements SiebDesEratosthenesInterface {
 
     private final int n;
     private int position = 0;

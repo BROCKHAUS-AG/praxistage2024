@@ -2,9 +2,8 @@
 
 ## Hier ist deine Aufgabe:
 
-Du zählst in der Konsole von 1 bis 100 aber immer wenn eine Zahl durch 3 geteilt werden kann gibts du Fizz und wenn eine Zahl durch 5
-teilbar ist Buzz aus. Wenn die zahl durch 3 und 5 teilbar ist gibts du FizzBuzz aus. Alles ausgaben sollen in der
-Konsole zu sehen sein.
+Du zählst in der Konsole von 1 bis 100. Immer, wenn eine Zahl durch 3 geteilt werden kann, gibst du Fizz und bei 5 Buzz aus. 
+Wenn die Zahl durch 3 und 5 teilbar ist, gibst du FizzBuzz aus. Alle Ausgaben sollen in der Konsole zu sehen sein.
 
 ## Hier ein paar Tipps:
 
